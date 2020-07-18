@@ -1,0 +1,100 @@
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid-container {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 5fr 1fr;
+      grid-template-rows: 5fr 1fr;
+      grid-template-areas: 'header  links' 'media   links';
+}
+
+.grid-container header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background: #201c1c;
+}
+
+.grid-container header .logo {
+  color: #fff;
+  padding: 30px;
+  font-size: 30px;
+}
+
+.grid-container header ul {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 30;
+  list-style: none;
+  letter-spacing: 1px;
+  color: #c0b8b8;
+}
+
+.grid-container header ul i {
+  padding: 10px 10px 10px 0;
+}
+
+.grid-container section {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: media;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-container section i {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.grid-container main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: links;
+  background: url(./../micah-boswell-OPnBJ5L2oxs-unsplash.jpg) no-repeat;
+  background-size: cover;
+}
+
+.grid-container main .links {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.grid-container main .links ul {
+  color: #fff;
+  float: right;
+  padding: 20px 40px  0 0;
+}
+
+.grid-container main h1 {
+  color: #fff;
+  padding: 200px 0 20px 40px;
+  font-size: 50px;
+}
+
+.grid-container main button {
+  background-color: #f5af17;
+  color: #fff;
+  padding: 30px;
+  outline: none;
+  border: none;
+  margin: 0 0 0 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
